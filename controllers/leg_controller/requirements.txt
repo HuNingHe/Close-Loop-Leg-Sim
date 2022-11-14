@@ -1,0 +1,5 @@
+numpy>=1.17.4
+sympy>=1.5.1
+matplotlib>=3.1.2
+Cython>=0.29.14
+# rbdl>=3.1.3
