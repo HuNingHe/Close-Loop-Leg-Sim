@@ -1,6 +1,4 @@
 # Close-Loop-Leg-Sim
 Webots simulation of closed-chain four-link leg
 
-
-https://user-images.githubusercontent.com/54448879/201669504-46269cb2-61cc-4b8e-8ba6-47bc06d1b654.mp4
-
+![1114_1](https://user-images.githubusercontent.com/54448879/201671054-0efd82f9-4457-46b1-bde9-c76749e1c164.jpg)
