@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="tui.SLDASM">
+  <link
+    name="hip">
+    <inertial>
+      <origin
+        xyz="-0.0031469494568199 0.0314197229226876 -0.0204175265055574"
+        rpy="0 0 0" />
+      <mass
+        value="1.02891876558951" />
+      <inertia
+        ixx="0.00216454110360411"
+        ixy="1.03484802705622E-06"
+        ixz="-0.000159729793683074"
+        iyy="0.00259967036729361"
+        iyz="7.1197866757041E-06"
+        izz="0.000636577291822137" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tui.SLDASM/meshes/hip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tui.SLDASM/meshes/hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="knee">
+    <inertial>
+      <origin
+        xyz="-0.0030655880143062 0.00796815268466371 0.00410761750084393"
+        rpy="0 0 0" />
+      <mass
+        value="0.0302015162334951" />
+      <inertia
+        ixx="2.72389254099516E-06"
+        ixy="-3.2590235409143E-08"
+        ixz="-7.06418411381514E-07"
+        iyy="4.4447560422269E-06"
+        iyz="2.25400264954472E-07"
+        izz="2.8800667643017E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tui.SLDASM/meshes/knee.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tui.SLDASM/meshes/knee.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="knee_joint"
+    type="revolute">
+    <origin
+      xyz="0 0.046 0"
+      rpy="0 0 0" />
+    <parent
+      link="hip" />
+    <child
+      link="knee" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="knee_1">
+    <inertial>
+      <origin
+        xyz="-0.0108570395413711 1.31838984174237E-16 -0.101414938784427"
+        rpy="0 0 0" />
+      <mass
+        value="0.0351522892543839" />
+      <inertia
+        ixx="0.000161263359438857"
+        ixy="-2.75285707857648E-20"
+        ixz="-7.89823866215329E-06"
+        iyy="0.000162032722845011"
+        iyz="-2.80870831353606E-19"
+        izz="9.80277141680016E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tui.SLDASM/meshes/knee_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tui.SLDASM/meshes/knee_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="knee_1_joint"
+    type="revolute">
+    <origin
+      xyz="-0.00388228567654028 0.00649999999999995 -0.0144888873943385"
+      rpy="0 0 0" />
+    <parent
+      link="knee" />
+    <child
+      link="knee_1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="knee_2">
+    <inertial>
+      <origin
+        xyz="0.044218571808776 2.66913224508669E-08 0.0690547146173288"
+        rpy="0 0 0" />
+      <mass
+        value="0.079786644647833" />
+      <inertia
+        ixx="0.000285454456004253"
+        ixy="-2.78835341950174E-11"
+        ixz="-0.000116427184351964"
+        iyy="0.000336851724917974"
+        iyz="-6.06117256670041E-11"
+        izz="5.47494438118228E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tui.SLDASM/meshes/knee_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tui.SLDASM/meshes/knee_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="knee_2_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0150470954233463 0 -0.20858486605384"
+      rpy="0 0 0" />
+    <parent
+      link="knee_1" />
+    <child
+      link="knee_2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
