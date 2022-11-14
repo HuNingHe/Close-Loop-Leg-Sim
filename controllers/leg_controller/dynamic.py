@@ -26,9 +26,9 @@ class LegDynamic:
                                    [0.00000088, 0.00000524, -0.00000055],
                                    [-0.00000027, -0.00000055, 0.00000492]], dtype=float)
 
-        link_inertial = np.array([[0.00051143, 0, 0.00008906],
+        link_inertial = np.array([[0.00052681, 0, -0.00000897],
                                   [0, 0.00052772, 0],
-                                  [0.00008906, 0, 0.0000165]], dtype=float)
+                                  [-0.00000897, 0, 0.00000112]], dtype=float)
 
         leg_inertial = np.array([[0.00069448, 0., 0.00034033],
                                  [0., 0.00087332, 0.],
@@ -41,7 +41,7 @@ class LegDynamic:
         toe_inertial = np.eye(3) * 1e-06
 
         rotor = Body.fromMassComInertia(0.03020152, np.array([-0.0040243, 0.00796815, 0.0031742]), rotor_inertial)
-        link = Body.fromMassComInertia(0.03515229, np.array([0.01576102, 0., -0.10076932]), link_inertial)
+        link = Body.fromMassComInertia(0.03515229, np.array([-0.00353189, 0., -0.10193327]), link_inertial)
         leg = Body.fromMassComInertia(0.07978664, np.array([0.03169095, 0., -0.07562750]), leg_inertial)
         thigh = Body.fromMassComInertia(1.028914, np.array([-0.003147, 0.031419, -0.02041768]), thigh_inertial)
         toe = Body.fromMassComInertia(0.02, np.zeros(3), toe_inertial)
