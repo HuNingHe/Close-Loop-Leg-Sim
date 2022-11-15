@@ -24,7 +24,7 @@ struct Foot_Pos{
 };
 
 const unsigned int trail_fresh_factor = 10;           // Trajectory update speed, updated every 10 time_step, reduces CPU and GPU usage
-const unsigned int max_num_of_trail_coordinates = 100; // Trajectory update speed, updated every 10 time_step, reduces CPU and GPU usage
+const unsigned int max_num_of_trail_coordinates = 100; 
 
 void create_trail(std::shared_ptr<Supervisor> sup, const std::string& target, std::vector<double> &color) {
     if (color.size() < 3) {
