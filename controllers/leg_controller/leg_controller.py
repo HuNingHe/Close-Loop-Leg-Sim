@@ -249,5 +249,5 @@ while robot.step(timestep) != -1:
     time %= time_swing + time_stance
 
     ft, dft, ddft = step_planner.foot_traj(time)
-    message = struct.pack("3d", ft[0], ft[1] + 0.052, ft[2])
+    message = struct.pack("3d", ft[0], ft[1] + 0.0525, ft[2])
     emitter.send(message)
